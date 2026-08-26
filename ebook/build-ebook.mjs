@@ -21,7 +21,7 @@ import { marked } from "marked"
 import puppeteer from "puppeteer"
 
 import { splitSource, buildStats, parseDeposit, parseFinanceRange } from "./extract-data.mjs"
-import { chapterMark, sectionDivider, terminalMark, calloutRule, cornerFlourish } from "./ornaments.mjs"
+import { chapterMark, sectionDivider, terminalMark, calloutRule } from "./ornaments.mjs"
 import { donutChart, barChart, escapeHtml, formatMoney } from "./charts.mjs"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
@@ -53,7 +53,7 @@ const FONT_FILES = [
  * network access or on a font being installed in the container.
  */
 async function buildFontFaces() {
-  const modulesDir = path.resolve(ROOT, "..", "node_modules")
+  const modulesDir = path.resolve(ROOT, "node_modules")
   const faces = []
   for (const [family, weight, style, relative] of FONT_FILES) {
     const buffer = await readFile(path.join(modulesDir, relative))
@@ -451,27 +451,6 @@ function figureSpecs(stats) {
 /* Front matter                                                       */
 /* ================================================================== */
 
-function titlePage(stats) {
-  return `<section class="title-page">
-  <div class="title-frame">
-    ${cornerFlourish(34)}
-    ${cornerFlourish(34)}
-    ${cornerFlourish(34)}
-    ${cornerFlourish(34)}
-  </div>
-  <div class="title-kicker">A UK Buyer's Guide</div>
-  <h1>Choosing the Right Islamic Home Finance</h1>
-  <div class="title-rule">${calloutRule(150)}</div>
-  <p class="subtitle">A practical, honest guide for Muslims buying a home in the UK</p>
-  <div class="title-meta">
-    <div><span class="snapshot">Data snapshot: February 2026</span></div>
-    <div>${stats.summary.homeProductCount} home finance products from ${stats.summary.homeProviderCount} providers</div>
-    <div>${stats.summary.savingsProductCount} halal savings products from ${stats.summary.savingsProviderCount} providers</div>
-  </div>
-  <div class="title-terminal">${terminalMark(24)}</div>
-</section>`
-}
-
 function colophonPage(stats) {
   return `<section class="colophon">
   <h2>About this edition</h2>
@@ -652,7 +631,7 @@ ${savingsRows}
 /* ================================================================== */
 
 async function buildHtml() {
-  const markdown = await readFile(path.join(ROOT, "islamicfinance-guide.md"), "utf8")
+  const markdown = await readFile(path.join(__dirname, "islamicfinance-guide.md"), "utf8")
   const { body, dataset } = splitSource(markdown)
   const stats = buildStats(dataset)
 
@@ -678,7 +657,7 @@ async function buildHtml() {
   const allFigures = chapters.flatMap((chapter) => chapter.figures)
 
   const fontFaces = await buildFontFaces()
-  const css = await readFile(path.join(ROOT, "styles", "book.css"), "utf8")
+  const css = await readFile(path.join(__dirname, "book.css"), "utf8")
 
   const missingPlacements = specs.filter(
     (spec) => !allFigures.some((figure) => figure.title === spec.title),
@@ -704,7 +683,6 @@ ${css}
 </head>
 <body>
 <div class="frontmatter">
-${titlePage(stats)}
 ${colophonPage(stats)}
 ${tocPage(chapters, allFigures)}
 </div>
@@ -726,7 +704,7 @@ ${appendixSection(dataset)}
   await mkdir(BUILD_DIR, { recursive: true })
   await writeFile(HTML_PATH, html, "utf8")
   await copyFile(
-    path.resolve(ROOT, "..", "node_modules", "pagedjs", "dist", "paged.polyfill.js"),
+    path.resolve(ROOT, "node_modules", "pagedjs", "dist", "paged.polyfill.js"),
     path.join(BUILD_DIR, "paged.polyfill.js"),
   )
 

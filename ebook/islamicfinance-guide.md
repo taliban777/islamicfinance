@@ -1,6 +1,7 @@
-<!-- ISLAMICFINANCE-EBOOK-CONTROL v2
-STATUS: complete (expanded pass finished — all 12 chapters lengthened with additional sections; word count ~22,100)
+<!-- ISLAMICFINANCE-EBOOK-CONTROL v3
+STATUS: complete (expanded pass finished, plus improvement pass adding a worked cost comparison, an action toolkit chapter, and a provider directory chapter; all 14 chapters; word count ~24,400)
 DATA-SNAPSHOT-DATE: 2026-02-01 (extracted from MySharia-Provider-Database.xlsx)
+LINK-VERIFICATION-DATE: 2026-08-26 (Chapter 13 provider directory URLs checked reachable on this date; this is a website-liveness check only, not a rate/product verification)
 STYLE: Warm, plain-English, honest. No AI-slop mannerisms: no em dashes, no forced colons used to break sentences, no contrastive "it's not just X, it's Y" parallelism, no dramatic phrasing. Every data-driven statement is captioned "As of February 2026." Balanced: real benefits and real criticisms are both stated plainly, with scholarly disagreement presented fairly rather than as a hit piece.
 OUTLINE:
   1. Foreword & how to use this guide [done, expanded]
@@ -9,13 +10,15 @@ OUTLINE:
   4. The UK landscape [done, expanded]
   5. The contract models explained plainly [done, expanded]
   6. Meet the providers [done, expanded]
-  7. Head-to-head comparison [done, expanded]
+  7. Head-to-head comparison [done, expanded, plus worked total-cost-in-pounds comparison]
   8. How to actually choose [done, expanded]
   9. Sharia governance & transparency [done, expanded]
   10. Beyond the mortgage: halal savings [done, expanded]
   11. Red flags, common mistakes, and questions to ask a provider [done, expanded]
-  12. Glossary [done, expanded]
-NEXT-ACTION: None. Book is complete and expanded. If asked to continue, consider a further pass only if the user requests more depth on a specific chapter, or a proofreading/consistency pass across all 12 chapters.
+  12. Your action toolkit [new: shortlist worksheet, questions checklist, red-flags checklist]
+  13. Provider directory [new: verified official website for every provider named in the book]
+  14. Glossary [done, expanded]
+NEXT-ACTION: None. Book is complete. If asked to continue, consider a further pass only if the user requests more depth on a specific chapter, a proofreading/consistency pass, or a refresh of the Chapter 13 link-verification date.
 RESUME-INSTRUCTIONS: Read this whole file first, including this control block and Appendix Z. Do not rewrite chapters unless explicitly asked. If further expansion is requested, add new subsections rather than padding existing prose, and keep every claim traceable to Appendix Z's data.
 -->
 
@@ -70,7 +73,7 @@ You could, in theory, get most of the raw numbers in this book from a single spr
 
 ### How this guide is organised
 
-The book has twelve chapters. The first few build understanding from the ground up: what riba is, why it matters, and the honest disagreements about how well today's products live up to the ideal. The middle chapters get practical: how the UK regulates these products, how each contract type actually works, and profiles of every provider in the data. The later chapters turn all of that into decision-making tools, cover halal savings for building a deposit, and end with a glossary and full comparison tables.
+The book has fourteen chapters. The first few build understanding from the ground up: what riba is, why it matters, and the honest disagreements about how well today's products live up to the ideal. The middle chapters get practical: how the UK regulates these products, how each contract type actually works, and profiles of every provider in the data. The later chapters turn all of that into decision-making tools, cover halal savings for building a deposit, hand you a shortlist worksheet and checklists to use while you apply, and end with a directory of every provider's official website, a glossary, and full comparison tables.
 
 You can read it start to finish, or jump straight to the chapter that answers your immediate question. Chapter 8, "How to actually choose," is written so it makes sense even if you skip everything before it, though it will make more sense if you have read Chapter 5 on contract models first.
 
@@ -479,6 +482,22 @@ Headline pricing, whether expressed as a benchmark plus margin or a fixed profit
 
 Because this data captures product structure rather than a live, itemised fee schedule for every product, treat the fee side as an open question for every product on your shortlist rather than an assumption. Two products with an identical headline rate can end up meaningfully different in total cost once arrangement fees, valuation fees, and legal costs are added, particularly on larger finance amounts where percentage-based fees scale up quickly. Ask each provider on your shortlist for a full, itemised cost breakdown in writing before comparing them against each other, not just the headline rate quoted on their website.
 
+### A worked comparison: turning fees into pounds
+
+Chapter 5 followed a £300,000 property with a £60,000 deposit, financing £240,000, through the mechanics of each contract model. It is worth returning to that exact example here, because it is where "compare total cost, not headline pricing" stops being a slogan and becomes an actual number you can hold in your head. The table below takes five of the residential owner-occupied products from earlier in this chapter and applies each one's own published fee structure, as recorded in this data, to that same £240,000 finance amount.
+
+| Provider | Product | Fee structure (as published) | What that costs on £240,000 financed | Early repayment charge |
+|---|---|---|---|---|
+| Al Rayan Bank | Standard HPP | £399 application fee + £999 arrangement fee | £1,398, regardless of loan size | None |
+| Gatehouse Bank | Residential HPP | £0 to £999 arrangement fee | Up to £999, regardless of loan size | Applies |
+| StrideUp | Inclusive HPP | £1,249 product fee | £1,249, regardless of loan size | None |
+| Wayhome | Shared Ownership | Fee-free option available | £0 | Not stated |
+| Pfida | OwnTogether | No arrangement fee stated; no early repayment charge; no late payment fees | £0 in stated fees | None |
+
+**As of February 2026**, three things jump out from this table alone, before a single percentage rate is even considered. First, every one of these five fee structures is a flat pound amount, not a percentage of the loan, which means the fee itself does not grow if you finance more or shrink if you finance less, unlike the percentage-based arrangement fees seen elsewhere in this data on buy-to-let and portfolio products. Second, the gap between the cheapest and most expensive fee structure here, Pfida or Wayhome's £0 against Al Rayan's £1,398, is itself real money, before rent or profit is added. Third, and most importantly, this table cannot tell you the full total cost, because the rent or profit element, the part that actually makes up most of what you pay each month, is not a fixed published number in this data. It moves with a benchmark, a market rent rate, or a bespoke quote depending on the provider, exactly as Chapter 8 describes.
+
+That gap is deliberate, not an oversight. Making up a plausible-looking monthly payment for five real providers, when this data does not contain live pricing, would fail the basic promise of this book: never invent a figure that is not in the data. Instead, the worksheet in Chapter 12 gives you a place to write in each shortlisted provider's actual quoted rent or profit figure once you have it in hand, sitting right next to these known, published fees, so the two pieces come together into one real total-cost comparison specific to your situation, rather than a generic illustration.
+
 ### What jumps out across the whole dataset
 
 A few patterns are worth naming directly. Diminishing Musharaka dominates every category except the two smaller Ahli United Ijara products and the two bespoke high-net-worth or bridging products. Deposit requirements below 15 percent are rare and, where they exist, come with an asterisk worth reading carefully. And transparency category correlates loosely with how established and consumer-facing a provider is: Gatehouse, StrideUp, Wayhome, and Pfida, all of which rely on external Sharia certification, sit at High, while the larger international-bank-linked entries, ADIB, QIB, and both Ahli United products, sit at Low.
@@ -726,7 +745,106 @@ A provider that answers all of these clearly, specifically, and without hesitati
 
 ---
 
-## Chapter 12: Glossary
+## Chapter 12: Your action toolkit
+
+### How to use this toolkit
+
+Chapters 8 and 11 laid out a filtering process, a set of comparison criteria, and a long list of questions worth asking. This chapter pulls all of it into three tools meant to be used directly, on paper or in your own spreadsheet, while you are actually shortlisting and applying, rather than re-read as prose each time you need them. None of the blank cells below are filled in for you, because doing so would mean inventing figures this data does not contain. That is the point: this toolkit is where your own, current quotes go.
+
+### Tool 1: The shortlist and cost worksheet
+
+Start by writing down the four filters from Chapter 8 for your own situation, then fill in a row for each product still standing after you apply them.
+
+**Your filters.** Purpose: ______________________. Deposit available: £______________________. Amount to finance: £______________________. Term needed: ______________________ years.
+
+**Your shortlist**, one row per product, filled in from your own research and each provider's quote:
+
+| Provider | Product | Deposit required | Fee in £ (from provider) | Rent or profit quote, fixed period | Total cost, fixed period | Total cost, full term | Early repayment charge? |
+|---|---|---|---|---|---|---|---|
+| | | | | | | | |
+| | | | | | | | |
+| | | | | | | | |
+| | | | | | | | |
+
+Two columns are worth flagging specifically. "Fee in £" should be an actual pound figure for your exact loan size, not a percentage, following Chapter 7's worked example. "Total cost, full term" is the single most useful column on this page and the one most buyers never ask for: it is what separates a genuinely cheaper product from one that only looks cheaper on a headline rate.
+
+### Tool 2: Questions to ask every provider
+
+Bring this list to every call or meeting and do not move on until each item has a specific answer, not a general reassurance.
+
+- [ ] What specific contract model does this product use, and can you explain how it works in plain terms?
+- [ ] What is the total cost, in pounds, over the fixed pricing period and over the full term, for my specific loan amount?
+- [ ] What fees apply, in pounds rather than only as a percentage, for my specific loan amount?
+- [ ] Is there an Early Repayment Charge, and under exactly what circumstances does it apply?
+- [ ] Who reviews this specific product for Sharia compliance, an internal board, an external certifier, or both?
+- [ ] Is that Sharia review or fatwa published, or available on request?
+- [ ] Is the reviewing scholar or board paid a fixed fee unrelated to loan volume, or compensated in a way tied to the products they approve?
+- [ ] How do the board or certifier's decisions get revisited if this product's terms change later?
+- [ ] What is the current minimum deposit, minimum and maximum finance size, and term range for this exact product today?
+- [ ] If pricing is benchmark-linked, which benchmark, and how and when does it reset?
+
+### Tool 3: Red flags checklist
+
+Treat any single "yes" below as a reason to slow down and ask more questions before proceeding, not necessarily a reason to walk away.
+
+- [ ] The relationship manager cannot explain the contract model in plain English without reading from a script.
+- [ ] Total cost or fee figures are not put in writing before an application fee is requested.
+- [ ] The provider will not name who reviews its Sharia compliance, or which board or certifier is involved.
+- [ ] You feel pressure to sign quickly because a rate or fee is said to be "expiring."
+- [ ] You have not yet confirmed the minimum finance size applies to your loan amount.
+- [ ] You have not asked whether an Early Repayment Charge applies, and for how long.
+- [ ] You are relying on a headline rate alone, without a written total-cost illustration for your own loan size and term.
+
+### Key takeaways
+
+- This toolkit is deliberately blank in the places where only your own, current quotes belong, so nothing here substitutes invented figures for real ones.
+- Fill in the shortlist worksheet only after applying Chapter 8's filters, so you are comparing a genuine shortlist of 2 to 5 products, not all 23.
+- Use the questions checklist on every call, and treat a clear, specific answer to each one as itself informative, regardless of which provider gives it.
+- A single red flag is a reason to ask more, not necessarily a reason to walk away. Several at once, especially pressure to sign quickly, is a reason to pause.
+
+---
+
+## Chapter 13: Provider directory
+
+### How to use this directory
+
+This directory gathers the official website for every provider named in this book, home finance and savings alike, in one place, so you do not have to hunt back through earlier chapters to find a link. Every URL below was checked and found reachable on 26 August 2026. That confirms the website exists and loads. It does not confirm that any specific rate, fee, deposit, or product described elsewhere in this book is still current, since this data snapshot is from February 2026 and this directory's verification date is later still. Always click through to the provider's own current page for the specific product before relying on any figure.
+
+| Provider | Official website | Covered in this guide | Verified reachable |
+|---|---|---|---|
+| ADIB UK | https://www.adib.co.uk/ | Home finance | 26 Aug 2026 |
+| Ahli United / Ahli United (Kuwait bank), KFH Group | https://uk.kfh.com/ | Home finance | 26 Aug 2026 |
+| Al Rayan Bank | https://www.alrayanbank.co.uk/ | Home finance and savings | 26 Aug 2026 |
+| BLME | https://www.blme.com/ | Savings | 26 Aug 2026 |
+| Cur8 Capital | https://cur8.capital/ | Savings and investment | 26 Aug 2026 |
+| Foresters Financial | https://www.foresters.com/en-gb/ | Savings and ISAs | 26 Aug 2026 |
+| Gatehouse Bank | https://gatehousebank.com/ | Home finance and savings | 26 Aug 2026 |
+| Habib Bank Zurich | https://habibbank.com/gb/ | Savings | 26 Aug 2026 |
+| KFH PLC (UK) | https://uk.kfh.com/ | Savings | 26 Aug 2026 |
+| Minted | https://www.theminted.com/ | Savings, gold-backed | 26 Aug 2026 |
+| Nomo (BLME) | https://www.nomobank.com/ | Savings | 26 Aug 2026 |
+| Offa | https://offa.co.uk/ | Home finance | 26 Aug 2026 |
+| Pfida | https://www.pfida.com/ | Home finance | 26 Aug 2026 |
+| QIB (UK) | https://www.qib.com.qa/ | Home finance and savings | 26 Aug 2026 |
+| Raisin UK | https://www.raisin.com/en-gb/ | Savings marketplace | 26 Aug 2026 |
+| Simply Ethical | https://simplyethical.com/ | Savings and investment | 26 Aug 2026 |
+| StrideUp | https://strideup.co/ | Home finance | 26 Aug 2026 |
+| UBL UK | https://www.ubluk.com/ | Home finance and savings | 26 Aug 2026 |
+| Wahed Invest | https://www.wahed.com/uk | Savings and investment | 26 Aug 2026 |
+| Wayhome | https://wayhome.co.uk/ | Home finance | 26 Aug 2026 |
+| Yielders | https://www.yielders.co.uk/ | Savings, property-backed | 26 Aug 2026 |
+
+A few entries need the caveat already raised in Chapters 4 and 6, stated again here directly. Both Ahli United entries and KFH PLC (UK) share the same uk.kfh.com domain in this data, reflecting the wider Kuwait Finance House group structure rather than a mistake in this directory, so confirm directly which specific legal entity and product you are dealing with. QIB UK's home finance product URL in the underlying dataset points to UBL UK's website rather than QIB's own, an anomaly in the source data flagged in Chapter 6. The QIB group's main site is listed above; if you are pursuing QIB's UK home finance product specifically, ask the provider directly for the correct current page rather than relying on the link this data captured.
+
+### Key takeaways
+
+- Every website in this directory was checked and confirmed reachable on 26 August 2026, independently of the February 2026 data snapshot the rest of this book is built on.
+- A reachable website is not the same as a current rate or product term. Click through and confirm the specific figure with the provider before relying on it.
+- Ahli United's two entries and KFH PLC (UK) share a domain because they belong to the same wider group. QIB UK's listed product link is a known data anomaly. Both are worth a direct call to the provider to resolve.
+
+---
+
+## Chapter 14: Glossary
 
 This chapter gathers every term used across the book in one place, so you can look something up quickly without hunting back through earlier chapters. Each definition matches how the term was introduced and used earlier in this guide.
 
