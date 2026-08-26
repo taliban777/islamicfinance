@@ -1,0 +1,307 @@
+{
+  "extractionDate": "2026-02-01",
+  "sourceFile": "MySharia-Provider-Database.xlsx",
+  "caption": "As of February 2026",
+  "summary": {
+    "homeProductCount": 23,
+    "homeProviderCount": 11,
+    "savingsProductCount": 31,
+    "savingsProviderCount": 15,
+    "depositStatedCount": 21,
+    "lowestDeposit": 5,
+    "highestDeposit": 35,
+    "medianDeposit": 25,
+    "medianResidentialDeposit": 20,
+    "lowestMinFinance": 50000,
+    "diminishingMusharakaShare": 65,
+    "highTransparencyShare": 35
+  },
+  "charts": {
+    "contractModels": [
+      {
+        "label": "Diminishing Musharaka",
+        "value": 15
+      },
+      {
+        "label": "Ijara (Lease-to-Own)",
+        "value": 3
+      },
+      {
+        "label": "Bespoke / Bridge",
+        "value": 2
+      },
+      {
+        "label": "Musharaka (Fixed)",
+        "value": 2
+      },
+      {
+        "label": "Murabaha",
+        "value": 1
+      }
+    ],
+    "depositByProduct": [
+      {
+        "label": "Gatehouse Bank, Residential HPP",
+        "provider": "Gatehouse Bank",
+        "product": "Residential HPP",
+        "value": 5,
+        "ltv": 95,
+        "caveat": true
+      },
+      {
+        "label": "Wayhome, Shared Ownership",
+        "provider": "Wayhome",
+        "product": "Shared Ownership",
+        "value": 5,
+        "ltv": 95,
+        "caveat": false
+      },
+      {
+        "label": "Gatehouse Bank, Green Residential HPP",
+        "provider": "Gatehouse Bank",
+        "product": "Green Residential HPP",
+        "value": 10,
+        "ltv": 90,
+        "caveat": false
+      },
+      {
+        "label": "Pfida, OwnTogether",
+        "provider": "Pfida",
+        "product": "OwnTogether",
+        "value": 15,
+        "ltv": 85,
+        "caveat": false
+      },
+      {
+        "label": "StrideUp, Inclusive HPP",
+        "provider": "StrideUp",
+        "product": "Inclusive HPP",
+        "value": 15,
+        "ltv": 85,
+        "caveat": false
+      },
+      {
+        "label": "Al Rayan Bank, Standard HPP",
+        "provider": "Al Rayan Bank",
+        "product": "Standard HPP",
+        "value": 20,
+        "ltv": 80,
+        "caveat": false
+      },
+      {
+        "label": "Gatehouse Bank, BTL Repayment",
+        "provider": "Gatehouse Bank",
+        "product": "BTL Repayment",
+        "value": 20,
+        "ltv": 80,
+        "caveat": false
+      },
+      {
+        "label": "Offa, BTL (Alburaq)",
+        "provider": "Offa",
+        "product": "BTL (Alburaq)",
+        "value": 20,
+        "ltv": 80,
+        "caveat": false
+      },
+      {
+        "label": "StrideUp, BTL (SPV/Ltd Co)",
+        "provider": "StrideUp",
+        "product": "BTL (SPV/Ltd Co)",
+        "value": 20,
+        "ltv": 80,
+        "caveat": false
+      },
+      {
+        "label": "ADIB UK, BTL Purchase Plan (Individual)",
+        "provider": "ADIB UK",
+        "product": "BTL Purchase Plan (Individual)",
+        "value": 25,
+        "ltv": 75,
+        "caveat": false
+      },
+      {
+        "label": "ADIB UK, Residential HPP (UK Resident)",
+        "provider": "ADIB UK",
+        "product": "Residential HPP (UK Resident)",
+        "value": 25,
+        "ltv": 75,
+        "caveat": false
+      },
+      {
+        "label": "Al Rayan Bank, BTL Purchase Plan",
+        "provider": "Al Rayan Bank",
+        "product": "BTL Purchase Plan",
+        "value": 25,
+        "ltv": 75,
+        "caveat": false
+      },
+      {
+        "label": "Al Rayan Bank, Premier Home Finance",
+        "provider": "Al Rayan Bank",
+        "product": "Premier Home Finance",
+        "value": 25,
+        "ltv": 75,
+        "caveat": false
+      },
+      {
+        "label": "Gatehouse Bank, BTL Rent-Only",
+        "provider": "Gatehouse Bank",
+        "product": "BTL Rent-Only",
+        "value": 25,
+        "ltv": 75,
+        "caveat": false
+      },
+      {
+        "label": "Gatehouse Bank, HMO / MUFB BTL",
+        "provider": "Gatehouse Bank",
+        "product": "HMO / MUFB BTL",
+        "value": 25,
+        "ltv": 75,
+        "caveat": false
+      },
+      {
+        "label": "QIB UK, HNW Custom HPP",
+        "provider": "QIB UK",
+        "product": "HNW Custom HPP",
+        "value": 25,
+        "ltv": 75,
+        "caveat": false
+      },
+      {
+        "label": "UBL UK, Portfolio BTL",
+        "provider": "UBL UK",
+        "product": "Portfolio BTL",
+        "value": 25,
+        "ltv": 75,
+        "caveat": false
+      },
+      {
+        "label": "ADIB UK, BTL Purchase Plan (SPV/Corporate)",
+        "provider": "ADIB UK",
+        "product": "BTL Purchase Plan (SPV/Corporate)",
+        "value": 35,
+        "ltv": 65,
+        "caveat": false
+      },
+      {
+        "label": "ADIB UK, Residential HPP (International/GCC)",
+        "provider": "ADIB UK",
+        "product": "Residential HPP (International/GCC)",
+        "value": 35,
+        "ltv": 65,
+        "caveat": false
+      },
+      {
+        "label": "Ahli United (Kuwait bank), Al-Manzil BTL Repay",
+        "provider": "Ahli United (Kuwait bank)",
+        "product": "Al-Manzil BTL Repay",
+        "value": 35,
+        "ltv": 65,
+        "caveat": false
+      },
+      {
+        "label": "Ahli United, Al-Manzil BTL Rent",
+        "provider": "Ahli United",
+        "product": "Al-Manzil BTL Rent",
+        "value": 35,
+        "ltv": 65,
+        "caveat": false
+      }
+    ],
+    "minFinanceByProvider": [
+      {
+        "label": "Al Rayan Bank",
+        "value": 50000
+      },
+      {
+        "label": "Pfida",
+        "value": 50000
+      },
+      {
+        "label": "StrideUp",
+        "value": 50000
+      },
+      {
+        "label": "Offa",
+        "value": 60000
+      },
+      {
+        "label": "Gatehouse Bank",
+        "value": 75000
+      },
+      {
+        "label": "Wayhome",
+        "value": 150000
+      },
+      {
+        "label": "Ahli United",
+        "value": 250000
+      },
+      {
+        "label": "Ahli United (Kuwait bank)",
+        "value": 250000
+      },
+      {
+        "label": "ADIB UK",
+        "value": 500000
+      },
+      {
+        "label": "UBL UK",
+        "value": 500000
+      },
+      {
+        "label": "QIB UK",
+        "value": 1000000
+      }
+    ],
+    "transparencyHome": [
+      {
+        "label": "High",
+        "value": 8
+      },
+      {
+        "label": "Medium",
+        "value": 8
+      },
+      {
+        "label": "Low",
+        "value": 7
+      }
+    ],
+    "savingsByLiquidity": [
+      {
+        "label": "Instant Access",
+        "value": 10
+      },
+      {
+        "label": "Fixed Term",
+        "value": 9
+      },
+      {
+        "label": "Notice Account",
+        "value": 7
+      },
+      {
+        "label": "Limited Access",
+        "value": 4
+      },
+      {
+        "label": "Varies",
+        "value": 1
+      }
+    ],
+    "fscs": [
+      {
+        "label": "FSCS protected",
+        "value": 22,
+        "detail": "£120k, Bank-backed, Deposit"
+      },
+      {
+        "label": "Not FSCS protected",
+        "value": 9,
+        "detail": "Investment, Asset-backed, Bullion, Commodity, Equity, IF-ISA"
+      }
+    ]
+  }
+}
