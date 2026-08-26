@@ -1,0 +1,984 @@
+/* ==================================================================
+   Choosing the Right Islamic Home Finance
+   Interior print stylesheet. Paginated by Paged.js, printed by Chrome.
+
+   Trim: 152mm x 229mm (6in x 9in trade paperback).
+   Palette: parchment ground, warm near-black text, deep emerald and
+   muted gold accents. Islamic geometric line ornaments used sparingly.
+   ================================================================== */
+
+:root {
+  --paper: #faf3e4;
+  --paper-deep: #f3e9d4;
+  --ink: #2a2118;
+  --ink-soft: #4a4034;
+  --muted: #6f6355;
+  --emerald: #0b3d2e;
+  --emerald-soft: #255c46;
+  --gold: #b8860b;
+  --gold-soft: #d4ae5c;
+  --hairline: #d9cdb4;
+}
+
+/* ------------------------------------------------------------------
+   Page geometry, running heads, folios
+   ------------------------------------------------------------------ */
+
+@page {
+  size: 152mm 229mm;
+  margin: 19mm 18mm 17mm 18mm;
+
+  @top-center {
+    content: string(running-title);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 7.6pt;
+    font-variant: small-caps;
+    letter-spacing: 0.08em;
+    color: #6f6355;
+    vertical-align: bottom;
+    padding-bottom: 5mm;
+  }
+
+  @bottom-center {
+    content: counter(page);
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 8.6pt;
+    color: #0b3d2e;
+    vertical-align: top;
+    padding-top: 6mm;
+  }
+}
+
+/* Front matter carries no folio and no running head. */
+@page plain {
+  @top-center {
+    content: none;
+  }
+  @bottom-center {
+    content: none;
+  }
+}
+
+/* A chapter's opening page shows the title itself, so the running head
+   would only repeat it. */
+@page chapter:first {
+  @top-center {
+    content: none;
+  }
+}
+
+/* ------------------------------------------------------------------
+   Base typography
+   ------------------------------------------------------------------ */
+
+html {
+  background: var(--paper);
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 10.4pt;
+  line-height: 1.7;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures;
+  text-rendering: optimizeLegibility;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+p {
+  margin: 0;
+  text-align: justify;
+  orphans: 2;
+  widows: 2;
+}
+
+p + p {
+  text-indent: 1.2em;
+}
+
+strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  color: var(--emerald);
+  text-decoration: none;
+}
+
+code {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 0.95em;
+}
+
+/* Inline URLs from the dataset are long. Let them break rather than
+   push the measure. */
+.url {
+  font-size: 8.4pt;
+  color: var(--emerald-soft);
+  word-break: break-all;
+  hyphens: none;
+}
+
+/* ------------------------------------------------------------------
+   Title page
+   ------------------------------------------------------------------ */
+
+.frontmatter {
+  page: plain;
+}
+
+.title-page {
+  break-after: page;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title-frame {
+  position: absolute;
+  inset: 0;
+}
+
+.title-frame .ornament-corner {
+  position: absolute;
+}
+
+.title-frame .ornament-corner:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.title-frame .ornament-corner:nth-child(2) {
+  top: 0;
+  right: 0;
+  transform: rotate(90deg);
+}
+.title-frame .ornament-corner:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+.title-frame .ornament-corner:nth-child(4) {
+  bottom: 0;
+  left: 0;
+  transform: rotate(270deg);
+}
+
+.title-kicker {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 8.4pt;
+  font-variant: small-caps;
+  letter-spacing: 0.24em;
+  color: var(--gold);
+  margin-bottom: 10mm;
+}
+
+.title-page h1 {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  font-size: 27pt;
+  line-height: 1.16;
+  letter-spacing: -0.005em;
+  color: var(--emerald);
+  margin: 0;
+  max-width: 105mm;
+  text-wrap: balance;
+}
+
+.title-rule {
+  margin: 8mm 0 7mm;
+}
+
+.title-page .subtitle {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 11.4pt;
+  font-style: italic;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  max-width: 92mm;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.title-meta {
+  margin-top: 16mm;
+  font-size: 8.6pt;
+  line-height: 1.7;
+  color: var(--muted);
+  text-align: center;
+}
+
+.title-meta .snapshot {
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  color: var(--emerald-soft);
+}
+
+.title-terminal {
+  margin-top: 9mm;
+}
+
+/* ------------------------------------------------------------------
+   Copyright / disclaimer page
+   ------------------------------------------------------------------ */
+
+.colophon {
+  break-after: page;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  font-size: 8.6pt;
+  line-height: 1.62;
+  color: var(--muted);
+}
+
+.colophon h2 {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 8.6pt;
+  font-variant: small-caps;
+  letter-spacing: 0.12em;
+  color: var(--emerald);
+  margin: 0 0 1.5mm;
+  font-weight: 600;
+}
+
+.colophon p {
+  text-align: left;
+  text-indent: 0;
+  margin-bottom: 4mm;
+  hyphens: none;
+}
+
+.colophon p:last-child {
+  margin-bottom: 0;
+}
+
+/* ------------------------------------------------------------------
+   Table of contents
+   ------------------------------------------------------------------ */
+
+.toc {
+  break-after: page;
+}
+
+.toc > h2 {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 500;
+  font-size: 17pt;
+  color: var(--emerald);
+  margin: 0 0 3mm;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+.toc-ornament {
+  text-align: center;
+  margin-bottom: 8mm;
+}
+
+.toc ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toc-entry {
+  margin-bottom: 3.4mm;
+}
+
+.toc-entry > a {
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+  color: var(--ink);
+}
+
+.toc-num {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 9pt;
+  color: var(--gold);
+  width: 9mm;
+  flex: none;
+}
+
+.toc-title {
+  font-size: 10.2pt;
+  line-height: 1.35;
+}
+
+.toc-dots {
+  flex: 1 1 auto;
+  border-bottom: 0.5pt dotted var(--hairline);
+  margin: 0 2mm 0 2.5mm;
+  transform: translateY(-2px);
+  min-width: 6mm;
+}
+
+.toc-entry > a::after {
+  content: target-counter(attr(href url), page);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 9pt;
+  color: var(--emerald);
+  flex: none;
+}
+
+.toc-sub {
+  list-style: none;
+  margin: 1.4mm 0 0 9mm;
+  padding: 0;
+}
+
+.toc-sub li {
+  font-size: 8.6pt;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.toc-sub li::before {
+  content: "";
+  display: inline-block;
+  width: 2.6mm;
+  height: 0.5pt;
+  background: var(--gold-soft);
+  vertical-align: 0.28em;
+  margin-right: 1.8mm;
+}
+
+.toc-figures {
+  margin-top: 7mm;
+  padding-top: 4mm;
+  border-top: 0.5pt solid var(--hairline);
+}
+
+.toc-figures h3 {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 8.4pt;
+  font-variant: small-caps;
+  letter-spacing: 0.12em;
+  color: var(--emerald);
+  margin: 0 0 2.5mm;
+  font-weight: 600;
+}
+
+/* ------------------------------------------------------------------
+   Chapter openings
+   ------------------------------------------------------------------ */
+
+.chapter {
+  page: chapter;
+  break-before: page;
+}
+
+.chapter-opener {
+  text-align: center;
+  padding-top: 6mm;
+  margin-bottom: 9mm;
+}
+
+.chapter-opener .ornament-chapter {
+  display: block;
+  margin: 0 auto 4mm;
+}
+
+.chapter-number {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 8.2pt;
+  font-variant: small-caps;
+  letter-spacing: 0.22em;
+  color: var(--gold);
+  margin-bottom: 3.5mm;
+}
+
+.chapter h2 {
+  string-set: running-title content(text);
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 500;
+  font-size: 20pt;
+  line-height: 1.18;
+  letter-spacing: -0.004em;
+  color: var(--emerald);
+  margin: 0 auto;
+  max-width: 100mm;
+  text-wrap: balance;
+}
+
+.chapter-rule {
+  margin-top: 5mm;
+}
+
+/* Ornamental opening: drop cap on the chapter's first paragraph. */
+.chapter .opening-para {
+  text-indent: 0;
+}
+
+.chapter .opening-para::first-letter {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  float: left;
+  font-size: 34pt;
+  line-height: 0.84;
+  color: var(--emerald);
+  padding: 1.5mm 1.6mm 0 0;
+}
+
+/* ------------------------------------------------------------------
+   Section headings
+   ------------------------------------------------------------------ */
+
+.chapter h3 {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 500;
+  font-size: 12.4pt;
+  line-height: 1.3;
+  color: var(--emerald);
+  margin: 7mm 0 2.5mm;
+  break-after: avoid;
+  page-break-after: avoid;
+  text-wrap: balance;
+}
+
+.chapter h3::before {
+  content: "";
+  display: block;
+  width: 8mm;
+  height: 0.9pt;
+  background: var(--gold);
+  margin-bottom: 2.2mm;
+}
+
+.chapter h4 {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 600;
+  font-size: 10.4pt;
+  color: var(--ink);
+  margin: 5mm 0 1.5mm;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+/* ------------------------------------------------------------------
+   Body furniture
+   ------------------------------------------------------------------ */
+
+p {
+  margin-bottom: 0;
+}
+
+.chapter p {
+  margin-bottom: 0;
+}
+
+.chapter p + p {
+  margin-top: 0;
+}
+
+.chapter > p,
+.chapter > .callout,
+.chapter > figure,
+.chapter > ul,
+.chapter > ol,
+.chapter > .table-wrap {
+  margin-bottom: 2.4mm;
+}
+
+ul,
+ol {
+  margin: 0 0 2.4mm;
+  padding-left: 6mm;
+}
+
+li {
+  margin-bottom: 1.4mm;
+  line-height: 1.62;
+}
+
+li::marker {
+  color: var(--gold);
+}
+
+hr {
+  border: none;
+  height: auto;
+  margin: 6mm 0;
+  text-align: center;
+}
+
+.divider {
+  text-align: center;
+  margin: 6mm 0;
+  break-inside: avoid;
+}
+
+blockquote {
+  margin: 4mm 0 4mm 4mm;
+  padding-left: 4mm;
+  border-left: 1pt solid var(--gold-soft);
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+/* ------------------------------------------------------------------
+   Callouts: key takeaways, disclaimers, worked examples
+   ------------------------------------------------------------------ */
+
+.callout {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin: 5mm 0;
+  padding: 4.5mm 5mm 4.5mm;
+  background: var(--paper-deep);
+  border-top: 1.4pt solid var(--emerald);
+  border-bottom: 0.5pt solid var(--hairline);
+}
+
+.callout-head {
+  display: flex;
+  align-items: center;
+  gap: 2.4mm;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 8.4pt;
+  font-variant: small-caps;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+  color: var(--emerald);
+  margin-bottom: 3mm;
+}
+
+.callout-head .mark {
+  display: inline-flex;
+  flex: none;
+}
+
+.callout ul {
+  margin: 0;
+  padding-left: 5mm;
+}
+
+.callout li {
+  font-size: 9.6pt;
+  line-height: 1.6;
+  margin-bottom: 1.8mm;
+}
+
+.callout li:last-child {
+  margin-bottom: 0;
+}
+
+.callout p {
+  font-size: 9.6pt;
+  text-indent: 0;
+  text-align: left;
+  hyphens: none;
+}
+
+.callout.takeaways {
+  border-top-color: var(--emerald);
+}
+
+.callout.disclaimer {
+  background: transparent;
+  border: 0.6pt solid var(--gold-soft);
+  border-left: 2.2pt solid var(--gold);
+  padding: 4mm 4.5mm;
+}
+
+.callout.disclaimer .callout-head {
+  color: var(--gold);
+}
+
+.callout.disclaimer p {
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+/* Pull quote used for the book's few standout lines. */
+.pullquote {
+  break-inside: avoid;
+  margin: 6mm 4mm;
+  text-align: center;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 12pt;
+  line-height: 1.42;
+  color: var(--emerald);
+}
+
+/* ------------------------------------------------------------------
+   Tables
+   ------------------------------------------------------------------ */
+
+.table-wrap {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin: 5mm 0;
+}
+
+.table-wrap.table-wide {
+  break-inside: auto;
+  page-break-inside: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 8.2pt;
+  line-height: 1.42;
+}
+
+thead th {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 600;
+  font-size: 7.8pt;
+  font-variant: small-caps;
+  letter-spacing: 0.07em;
+  text-align: left;
+  color: var(--emerald);
+  padding: 1.6mm 2mm;
+  border-bottom: 1.2pt solid var(--gold);
+  vertical-align: bottom;
+}
+
+thead {
+  display: table-header-group;
+}
+
+tbody td {
+  padding: 1.5mm 2mm;
+  vertical-align: top;
+  border-bottom: 0.4pt solid var(--hairline);
+  hyphens: none;
+}
+
+tbody tr:nth-child(odd) td {
+  background: rgba(11, 61, 46, 0.045);
+}
+
+tbody tr:last-child td {
+  border-bottom: 0.8pt solid var(--hairline);
+}
+
+tbody td:first-child {
+  font-weight: 600;
+  color: var(--emerald);
+}
+
+/* Seven- and eight-column comparison tables need a tighter setting to
+   stay inside the measure without shrinking the whole book. */
+table.table-dense {
+  font-size: 7.1pt;
+  line-height: 1.34;
+}
+
+table.table-dense thead th {
+  font-size: 6.8pt;
+  padding: 1.3mm 1.2mm;
+}
+
+table.table-dense tbody td {
+  padding: 1.2mm 1.2mm;
+}
+
+.table-caption {
+  font-size: 7.8pt;
+  color: var(--muted);
+  margin-top: 1.8mm;
+  text-align: right;
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
+}
+
+/* ------------------------------------------------------------------
+   Figures and charts
+   ------------------------------------------------------------------ */
+
+.figure {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin: 6mm 0;
+  padding: 0;
+}
+
+.figure-standalone {
+  break-before: auto;
+}
+
+.figure-head {
+  display: flex;
+  align-items: baseline;
+  gap: 2.5mm;
+  border-bottom: 0.8pt solid var(--gold);
+  padding-bottom: 1.6mm;
+  margin-bottom: 3.5mm;
+}
+
+.figure-number {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 8pt;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+  flex: none;
+}
+
+.figure-title {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 9.2pt;
+  font-weight: 600;
+  color: var(--emerald);
+  line-height: 1.3;
+}
+
+.figure-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 4mm;
+  margin-top: 2.5mm;
+  padding-top: 1.6mm;
+  border-top: 0.4pt solid var(--hairline);
+  font-size: 7.6pt;
+  color: var(--muted);
+}
+
+.figure-note {
+  line-height: 1.42;
+  text-align: left;
+  hyphens: none;
+}
+
+.figure-caption {
+  flex: none;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  color: var(--emerald-soft);
+  white-space: nowrap;
+}
+
+.chart svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.chart-donut {
+  display: flex;
+  align-items: center;
+  gap: 5mm;
+}
+
+.chart-donut svg {
+  flex: none;
+}
+
+.donut-value {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 20px;
+  font-weight: 600;
+  fill: var(--emerald);
+}
+
+.donut-label {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 8.5px;
+  letter-spacing: 0.1em;
+  fill: var(--muted);
+  text-transform: lowercase;
+}
+
+.chart-legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1 1 auto;
+}
+
+.chart-legend li {
+  display: grid;
+  grid-template-columns: 3.2mm 1fr auto;
+  align-items: baseline;
+  column-gap: 2.2mm;
+  font-size: 8.4pt;
+  line-height: 1.4;
+  margin-bottom: 2mm;
+  padding-bottom: 1.6mm;
+  border-bottom: 0.4pt solid var(--hairline);
+}
+
+.chart-legend li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.swatch {
+  width: 3.2mm;
+  height: 3.2mm;
+  display: block;
+  transform: translateY(0.4mm) rotate(45deg);
+}
+
+.legend-label {
+  color: var(--ink);
+}
+
+.legend-value {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 8.4pt;
+  color: var(--emerald);
+  white-space: nowrap;
+}
+
+.legend-pct {
+  color: var(--muted);
+  font-size: 7.6pt;
+}
+
+.legend-detail {
+  grid-column: 2 / -1;
+  font-size: 7.2pt;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+/* SVG text classes, sized in px because they live inside the viewBox. */
+.bar-label {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 8.6px;
+  fill: var(--ink);
+}
+
+.bar-sublabel {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 7.4px;
+  font-style: italic;
+  fill: var(--muted);
+}
+
+.bar-value {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 8.2px;
+  fill: var(--emerald);
+}
+
+.bar-flag {
+  fill: var(--gold);
+  font-size: 8px;
+}
+
+.axis-tick {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 7.4px;
+  fill: var(--muted);
+}
+
+.axis-name {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 7.4px;
+  font-style: italic;
+  fill: var(--muted);
+}
+
+/* ------------------------------------------------------------------
+   Glossary
+   ------------------------------------------------------------------ */
+
+.glossary-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.glossary-list li {
+  margin-bottom: 3mm;
+  padding-bottom: 3mm;
+  border-bottom: 0.4pt solid var(--hairline);
+  break-inside: avoid;
+  line-height: 1.62;
+}
+
+.glossary-term {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  color: var(--emerald);
+}
+
+/* ------------------------------------------------------------------
+   Data appendix (condensed)
+   ------------------------------------------------------------------ */
+
+.appendix {
+  page: chapter;
+  break-before: page;
+}
+
+.appendix table {
+  font-size: 7pt;
+}
+
+.appendix thead th {
+  font-size: 6.8pt;
+  padding: 1.2mm 1.4mm;
+}
+
+.appendix tbody td {
+  padding: 1.1mm 1.4mm;
+}
+
+.appendix .table-wrap {
+  break-inside: auto;
+  page-break-inside: auto;
+}
+
+/* ------------------------------------------------------------------
+   Closing page
+   ------------------------------------------------------------------ */
+
+.closing {
+  text-align: center;
+  margin-top: 8mm;
+}
+
+.closing .ornament-terminal {
+  margin: 0 auto;
+}
+
+/* ------------------------------------------------------------------
+   Paged.js page surface
+   ------------------------------------------------------------------ */
+
+/* Paged.js moves content into generated page elements, so the parchment
+   ground has to be painted on the page itself, not just on <body>. */
+.pagedjs_page {
+  background: var(--paper);
+}
+
+@media screen {
+  body {
+    background: #3b352c;
+  }
+
+  .pagedjs_pages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding: 32px 0;
+  }
+
+  .pagedjs_page {
+    background: var(--paper);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+  }
+}

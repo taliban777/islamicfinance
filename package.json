@@ -1,0 +1,28 @@
+{
+  "name": "v0-project",
+  "version": "1.0.0",
+  "description": "\"# islamicfinance\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taliban777/islamicfinance.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/taliban777/islamicfinance/issues"
+  },
+  "homepage": "https://github.com/taliban777/islamicfinance#readme",
+  "dependencies": {
+    "@fontsource/fraunces": "^5.3.0",
+    "@fontsource/source-serif-4": "^5.3.0",
+    "marked": "^18.0.11",
+    "pagedjs": "^0.4.3",
+    "puppeteer": "^25.9.0"
+  }
+}
