@@ -1,7 +1,8 @@
 node_modules/
 .puppeteer-cache/
 build/
-output/
+output/*
+!output/islamic-home-finance-guide.pdf
 .next/
 .vercel/
 .env*.local
