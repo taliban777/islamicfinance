@@ -1,6 +1,7 @@
-<!-- ISLAMICFINANCE-EBOOK-CONTROL v2
-STATUS: complete (expanded pass finished — all 12 chapters lengthened with additional sections; word count ~22,100)
+<!-- ISLAMICFINANCE-EBOOK-CONTROL v3
+STATUS: complete (expanded pass finished, plus improvement pass adding a worked cost comparison, an action toolkit chapter, and a provider directory chapter; all 14 chapters; word count ~24,400)
 DATA-SNAPSHOT-DATE: 2026-02-01 (extracted from MySharia-Provider-Database.xlsx)
+LINK-VERIFICATION-DATE: 2026-08-26 (Chapter 13 provider directory URLs checked reachable on this date; this is a website-liveness check only, not a rate/product verification)
 STYLE: Warm, plain-English, honest. No AI-slop mannerisms: no em dashes, no forced colons used to break sentences, no contrastive "it's not just X, it's Y" parallelism, no dramatic phrasing. Every data-driven statement is captioned "As of February 2026." Balanced: real benefits and real criticisms are both stated plainly, with scholarly disagreement presented fairly rather than as a hit piece.
 OUTLINE:
   1. Foreword & how to use this guide [done, expanded]
@@ -9,13 +10,15 @@ OUTLINE:
   4. The UK landscape [done, expanded]
   5. The contract models explained plainly [done, expanded]
   6. Meet the providers [done, expanded]
-  7. Head-to-head comparison [done, expanded]
+  7. Head-to-head comparison [done, expanded, plus worked total-cost-in-pounds comparison]
   8. How to actually choose [done, expanded]
   9. Sharia governance & transparency [done, expanded]
   10. Beyond the mortgage: halal savings [done, expanded]
   11. Red flags, common mistakes, and questions to ask a provider [done, expanded]
-  12. Glossary [done, expanded]
-NEXT-ACTION: None. Book is complete and expanded. If asked to continue, consider a further pass only if the user requests more depth on a specific chapter, or a proofreading/consistency pass across all 12 chapters.
+  12. Your action toolkit [new: shortlist worksheet, questions checklist, red-flags checklist]
+  13. Provider directory [new: verified official website for every provider named in the book]
+  14. Glossary [done, expanded]
+NEXT-ACTION: None. Book is complete. If asked to continue, consider a further pass only if the user requests more depth on a specific chapter, a proofreading/consistency pass, or a refresh of the Chapter 13 link-verification date.
 RESUME-INSTRUCTIONS: Read this whole file first, including this control block and Appendix Z. Do not rewrite chapters unless explicitly asked. If further expansion is requested, add new subsections rather than padding existing prose, and keep every claim traceable to Appendix Z's data.
 -->
 
@@ -70,7 +73,7 @@ You could, in theory, get most of the raw numbers in this book from a single spr
 
 ### How this guide is organised
 
-The book has twelve chapters. The first few build understanding from the ground up: what riba is, why it matters, and the honest disagreements about how well today's products live up to the ideal. The middle chapters get practical: how the UK regulates these products, how each contract type actually works, and profiles of every provider in the data. The later chapters turn all of that into decision-making tools, cover halal savings for building a deposit, and end with a glossary and full comparison tables.
+The book has fourteen chapters. The first few build understanding from the ground up: what riba is, why it matters, and the honest disagreements about how well today's products live up to the ideal. The middle chapters get practical: how the UK regulates these products, how each contract type actually works, and profiles of every provider in the data. The later chapters turn all of that into decision-making tools, cover halal savings for building a deposit, hand you a shortlist worksheet and checklists to use while you apply, and end with a directory of every provider's official website, a glossary, and full comparison tables.
 
 You can read it start to finish, or jump straight to the chapter that answers your immediate question. Chapter 8, "How to actually choose," is written so it makes sense even if you skip everything before it, though it will make more sense if you have read Chapter 5 on contract models first.
 
