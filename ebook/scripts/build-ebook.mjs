@@ -74,6 +74,19 @@ async function buildFontFaces() {
 
 const FRONT_SECTION_SKIP = /^Key writing rules/i
 
+/**
+ * The prose was drafted against an earlier cut of the dataset and quotes a
+ * savings-product count that the appendix no longer matches. The appendix is
+ * authoritative, so the count is realigned here rather than leaving the book
+ * contradicting its own data. Prose is otherwise never rewritten.
+ */
+function reconcileCounts(body, stats) {
+  const { savingsProductCount } = stats.summary
+  return body.replace(/(\b)(\d+)(\s+related savings products\b)/g, (match, before, quoted, after) =>
+    Number(quoted) === savingsProductCount ? match : `${before}${savingsProductCount}${after}`,
+  )
+}
+
 /** Splits the narrative body into chapters keyed by their number. */
 function parseChapters(body) {
   const pattern = /^## Chapter (\d+):\s*(.+)$/gm
@@ -109,14 +122,46 @@ function parseSections(raw) {
   return { preamble, sections }
 }
 
+/**
+ * Upgrades straight typewriter punctuation to real book punctuation.
+ * Only runs on text between tags, so attribute values and entities are
+ * left untouched.
+ */
+function typographic(html) {
+  return html.replace(/>([^<]+)</g, (match, text) => {
+    if (!/["'-]/.test(text)) return match
+
+    const fixed = text
+      // Em dash from "--", en dash for numeric ranges spelled with a hyphen.
+      .replace(/--/g, "\u2014")
+      .replace(/(\d)\s?-\s?(\d)/g, "$1\u2013$2")
+      // Apostrophes: contractions, possessives, and decades such as '90s.
+      .replace(/(\w)'(\w)/g, "$1\u2019$2")
+      .replace(/(\w)'(?=\s|$|[.,;:!?)])/g, "$1\u2019")
+      .replace(/'(?=\d\d\b)/g, "\u2019")
+      // Double quotes: opening if preceded by start/space/opening punctuation.
+      .replace(/(^|[\s([{\u2014\u2013])"/g, "$1\u201c")
+      .replace(/"/g, "\u201d")
+      // Any remaining single quote opens a quotation.
+      .replace(/(^|[\s([{])'/g, "$1\u2018")
+
+    return `>${fixed}<`
+  })
+}
+
 /** Renders markdown and applies the book's HTML furniture. */
-function renderProse(markdown, { firstParagraphIsOpener = false } = {}) {
+function renderProse(markdown, { firstParagraphIsOpener = false, dividers = true } = {}) {
   if (!markdown) return ""
   let html = marked.parse(markdown)
 
   html = html
-    .replace(/<p>\s*@@DIVIDER@@\s*<\/p>/g, `<div class="divider">${sectionDivider(300)}</div>`)
+    .replace(
+      /<p>\s*@@DIVIDER@@\s*<\/p>/g,
+      dividers ? `<div class="divider">${sectionDivider(300)}</div>` : "",
+    )
     .replace(/@@DIVIDER@@/g, "")
+
+  html = typographic(html)
 
   // Bare provider URLs get their own class so they can break mid-string
   // without stretching the measure.
@@ -199,7 +244,7 @@ function renderChapter(chapter, figuresForChapter, nextFigureNumber) {
         callout({
           variant: "takeaways",
           label: "Key takeaways",
-          body: marked.parse(section.body),
+          body: renderProse(section.body, { dividers: false }),
         }),
       )
       continue
@@ -292,12 +337,12 @@ function figureSpecs(stats) {
     {
       chapter: 5,
       after: "Side by side",
-      title: "Contract models across the 23 UK home finance products",
+      title: `Contract models across the ${stats.summary.homeProductCount} UK home finance products`,
       render: (number, id) =>
         donutChart({
           id,
           number,
-          title: "Contract models across the 23 UK home finance products",
+          title: `Contract models across the ${stats.summary.homeProductCount} UK home finance products`,
           note: `Diminishing Musharaka accounts for ${stats.summary.diminishingMusharakaShare} percent of products in the snapshot.`,
           data: c.contractModels,
           centreValue: String(stats.summary.homeProductCount),
@@ -387,12 +432,12 @@ function figureSpecs(stats) {
     {
       chapter: 10,
       after: "A word on FSCS protection",
-      title: "FSCS protection across the 31 savings products",
+      title: `FSCS protection across the ${stats.summary.savingsProductCount} savings products`,
       render: (number, id) =>
         donutChart({
           id,
           number,
-          title: "FSCS protection across the 31 savings products",
+          title: `FSCS protection across the ${stats.summary.savingsProductCount} savings products`,
           note: "Deposit-based bank products are generally covered. Investment, gold, property, and IF-ISA style products generally are not.",
           data: c.fscs,
           centreValue: String(stats.summary.savingsProductCount),
@@ -611,7 +656,9 @@ async function buildHtml() {
   const { body, dataset } = splitSource(markdown)
   const stats = buildStats(dataset)
 
-  const rawChapters = parseChapters(body).filter((chapter) => !FRONT_SECTION_SKIP.test(chapter.title))
+  const rawChapters = parseChapters(reconcileCounts(body, stats)).filter(
+    (chapter) => !FRONT_SECTION_SKIP.test(chapter.title),
+  )
   const specs = figureSpecs(stats)
 
   let figureCounter = 0

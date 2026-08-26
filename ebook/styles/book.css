@@ -136,10 +136,13 @@ code {
   page: plain;
 }
 
+/* 193mm is the live content height: the 229mm trim less the 19mm and 17mm
+   page margins. Paged.js gives this element no percentage height to resolve
+   against, so the height is stated explicitly to fill the page. */
 .title-page {
   break-after: page;
   position: relative;
-  height: 100%;
+  height: 193mm;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -239,7 +242,7 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 100%;
+  height: 193mm;
   font-size: 8.6pt;
   line-height: 1.62;
   color: var(--muted);
@@ -485,13 +488,24 @@ p {
   margin-top: 0;
 }
 
-.chapter > p,
+/* Continuous prose is set the traditional way: indent, no paragraph gap.
+   Block elements keep their own breathing room. */
 .chapter > .callout,
 .chapter > figure,
 .chapter > ul,
 .chapter > ol,
 .chapter > .table-wrap {
   margin-bottom: 2.4mm;
+}
+
+/* A paragraph that follows a block, rather than another paragraph, starts
+   flush and needs the gap restored above it. */
+.chapter > .table-wrap + p,
+.chapter > figure + p,
+.chapter > .callout + p,
+.chapter > ul + p,
+.chapter > ol + p {
+  margin-top: 2.4mm;
 }
 
 ul,
