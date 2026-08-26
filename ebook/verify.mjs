@@ -52,8 +52,15 @@ await screenshotPage(2, 'page-02-toc.png');
 // find first page with a real chart (multiple svgs beyond ornaments, likely bar/line chart classes)
 console.log('candidate chart pages:', pages.filter((p) => p.hasAnySvg > 0).map((p) => p.i).slice(0, 20));
 
-for (const idx of [22, 23, 29, 36, 37, 38, 45, 46, 50, 52, 53, 55]) {
-  await screenshotPage(idx, `page-${String(idx).padStart(2, '0')}-chart.png`);
+const realChartPages = await page.evaluate(() =>
+  Array.from(document.querySelectorAll('.pagedjs_page'))
+    .map((p, i) => ({ i, hasChart: p.querySelector('.chart-bar, .chart-donut') != null }))
+    .filter((p) => p.hasChart)
+    .map((p) => p.i),
+);
+console.log('real chart pages:', realChartPages);
+for (const idx of realChartPages) {
+  await screenshotPage(idx, `real-chart-${String(idx).padStart(2, '0')}.png`);
 }
 
 await browser.close();
