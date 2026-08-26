@@ -14,7 +14,7 @@ import { fileURLToPath } from "node:url"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const ROOT = path.resolve(__dirname, "..")
-const SOURCE_MD = path.join(ROOT, "islamicfinance-guide.md")
+const SOURCE_MD = path.join(__dirname, "islamicfinance-guide.md")
 const OUT_DIR = path.join(ROOT, "build")
 const OUT_FILE = path.join(OUT_DIR, "stats.json")
 

@@ -1,0 +1,17 @@
+{
+  "name": "islamicfinance-ebook",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ebook:build": "node ebook/build-ebook.mjs",
+    "ebook:html": "node ebook/build-ebook.mjs --html-only",
+    "ebook:stats": "node ebook/extract-data.mjs"
+  },
+  "dependencies": {
+    "@fontsource/fraunces": "^5.1.1",
+    "@fontsource/source-serif-4": "^5.1.1",
+    "marked": "^12.0.2",
+    "pagedjs": "^0.4.3",
+    "puppeteer": "^22.15.0"
+  }
+}

@@ -53,7 +53,7 @@ const FONT_FILES = [
  * network access or on a font being installed in the container.
  */
 async function buildFontFaces() {
-  const modulesDir = path.resolve(ROOT, "..", "node_modules")
+  const modulesDir = path.resolve(ROOT, "node_modules")
   const faces = []
   for (const [family, weight, style, relative] of FONT_FILES) {
     const buffer = await readFile(path.join(modulesDir, relative))
@@ -652,7 +652,7 @@ ${savingsRows}
 /* ================================================================== */
 
 async function buildHtml() {
-  const markdown = await readFile(path.join(ROOT, "islamicfinance-guide.md"), "utf8")
+  const markdown = await readFile(path.join(__dirname, "islamicfinance-guide.md"), "utf8")
   const { body, dataset } = splitSource(markdown)
   const stats = buildStats(dataset)
 
@@ -678,7 +678,7 @@ async function buildHtml() {
   const allFigures = chapters.flatMap((chapter) => chapter.figures)
 
   const fontFaces = await buildFontFaces()
-  const css = await readFile(path.join(ROOT, "styles", "book.css"), "utf8")
+  const css = await readFile(path.join(__dirname, "book.css"), "utf8")
 
   const missingPlacements = specs.filter(
     (spec) => !allFigures.some((figure) => figure.title === spec.title),
@@ -726,7 +726,7 @@ ${appendixSection(dataset)}
   await mkdir(BUILD_DIR, { recursive: true })
   await writeFile(HTML_PATH, html, "utf8")
   await copyFile(
-    path.resolve(ROOT, "..", "node_modules", "pagedjs", "dist", "paged.polyfill.js"),
+    path.resolve(ROOT, "node_modules", "pagedjs", "dist", "paged.polyfill.js"),
     path.join(BUILD_DIR, "paged.polyfill.js"),
   )
 
