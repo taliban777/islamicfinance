@@ -53,7 +53,7 @@ const FONT_FILES = [
  * network access or on a font being installed in the container.
  */
 async function buildFontFaces() {
-  const modulesDir = path.resolve(ROOT, "..", "node_modules")
+  const modulesDir = path.join(ROOT, "node_modules")
   const faces = []
   for (const [family, weight, style, relative] of FONT_FILES) {
     const buffer = await readFile(path.join(modulesDir, relative))
@@ -726,7 +726,7 @@ ${appendixSection(dataset)}
   await mkdir(BUILD_DIR, { recursive: true })
   await writeFile(HTML_PATH, html, "utf8")
   await copyFile(
-    path.resolve(ROOT, "..", "node_modules", "pagedjs", "dist", "paged.polyfill.js"),
+    path.join(ROOT, "node_modules", "pagedjs", "dist", "paged.polyfill.js"),
     path.join(BUILD_DIR, "paged.polyfill.js"),
   )
 

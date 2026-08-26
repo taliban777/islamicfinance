@@ -1,0 +1,8 @@
+node_modules/
+.puppeteer-cache/
+build/
+output/
+.next/
+.vercel/
+.env*.local
+*.log
