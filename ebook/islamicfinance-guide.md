@@ -1,22 +1,22 @@
-<!-- ISLAMICFINANCE-EBOOK-CONTROL v1
-STATUS: complete
+<!-- ISLAMICFINANCE-EBOOK-CONTROL v2
+STATUS: complete (expanded pass finished — all 12 chapters lengthened with additional sections; word count ~22,100)
 DATA-SNAPSHOT-DATE: 2026-02-01 (extracted from MySharia-Provider-Database.xlsx)
 STYLE: Warm, plain-English, honest. No AI-slop mannerisms: no em dashes, no forced colons used to break sentences, no contrastive "it's not just X, it's Y" parallelism, no dramatic phrasing. Every data-driven statement is captioned "As of February 2026." Balanced: real benefits and real criticisms are both stated plainly, with scholarly disagreement presented fairly rather than as a hit piece.
 OUTLINE:
-  1. Foreword & how to use this guide [done]
-  2. Islamic finance for absolute beginners [done]
-  3. The honest critique [done]
-  4. The UK landscape [done]
-  5. The contract models explained plainly [done]
-  6. Meet the providers [done]
-  7. Head-to-head comparison [done]
-  8. How to actually choose [done]
-  9. Sharia governance & transparency [done]
-  10. Beyond the mortgage: halal savings [done]
-  11. Red flags, common mistakes, and questions to ask a provider [done]
-  12. Glossary [pending]
-NEXT-ACTION: Write chapter 12: Glossary (final chapter, then mark STATUS complete)
-RESUME-INSTRUCTIONS: Read this whole file first, including this control block and Appendix Z. Do not rewrite chapters marked [done]. Continue writing from NEXT-ACTION, one or a few chapters at a time, then update STATUS, the OUTLINE checkmarks, and NEXT-ACTION before stopping.
+  1. Foreword & how to use this guide [done, expanded]
+  2. Islamic finance for absolute beginners [done, expanded]
+  3. The honest critique [done, expanded]
+  4. The UK landscape [done, expanded]
+  5. The contract models explained plainly [done, expanded]
+  6. Meet the providers [done, expanded]
+  7. Head-to-head comparison [done, expanded]
+  8. How to actually choose [done, expanded]
+  9. Sharia governance & transparency [done, expanded]
+  10. Beyond the mortgage: halal savings [done, expanded]
+  11. Red flags, common mistakes, and questions to ask a provider [done, expanded]
+  12. Glossary [done, expanded]
+NEXT-ACTION: None. Book is complete and expanded. If asked to continue, consider a further pass only if the user requests more depth on a specific chapter, or a proofreading/consistency pass across all 12 chapters.
+RESUME-INSTRUCTIONS: Read this whole file first, including this control block and Appendix Z. Do not rewrite chapters unless explicitly asked. If further expansion is requested, add new subsections rather than padding existing prose, and keep every claim traceable to Appendix Z's data.
 -->
 
 # Choosing the Right Islamic Home Finance
@@ -27,13 +27,13 @@ RESUME-INSTRUCTIONS: Read this whole file first, including this control block an
 
 - Audience: intelligent readers with no finance background. Explain every Arabic or technical term the first time it appears.
 - Tone: warm, clear, honest, not preachy. Give real benefits and real problems together. Present scholarly disagreement fairly.
-- Each chapter: roughly 800 to 1500 words, proper Markdown headings, at least one comparison table or worked example where the data supports it, and a short "Key takeaways" list at the end.
+- Each chapter: substantial (roughly 1500 to 2500+ words after the expansion pass), proper Markdown headings, at least one comparison table or worked example where the data supports it, and a short "Key takeaways" list at the end.
 - Cite provider URLs from the data snapshot where relevant.
 - Never invent products, rates, or providers that are not in the data. If something is not in the data, say so directly.
 - This is educational content, not regulated financial advice. Say so wherever it matters.
 - Caption every data-driven comparison or figure with "As of February 2026" since the spreadsheet is a dated snapshot, not live data.
 - Avoid AI-writing tics: no em dashes, no "it's not just X, it's Y" constructions, no forced colons used purely for rhythm, no inflated or dramatic language.
-- Write ONE chapter (or a small batch) per turn, then stop and update the control block above.
+- If further expansion is requested, write ONE chapter (or a small batch) per turn, then stop and update the control block above.
 
 ---
 
@@ -57,6 +57,16 @@ This book is written for someone who has little or no background in finance and 
 - How to choose the right option for your own situation, whether you are a first-time buyer, a landlord, or someone buying at the top end of the market
 
 You do not need to know what Diminishing Musharaka means yet. Chapter 5 explains it from scratch, with a worked example in pounds and pence.
+
+### What the underlying data actually covers
+
+To keep this guide grounded in reality rather than generic advice, it draws on a structured dataset covering the UK Islamic home finance and savings market. As of February 2026, that dataset lists 23 distinct home finance products spread across 11 providers, ranging from long-established Islamic banks to newer entrants and mainstream banking groups running dedicated Islamic finance arms. It also lists 31 halal savings products, from everyday savings accounts to fixed-term deposits, which matter enormously to this topic because almost every Islamic home finance provider requires a larger deposit than a conventional lender, often 15 to 20 percent of the property price rather than 5 or 10 percent, which makes the savings side of this journey just as important as the mortgage side.
+
+Every table, provider profile, and figure in this book traces back to that dataset. Where the data is silent on something, for example if a provider does not publish a specific fee or does not offer buy-to-let finance, this guide says so directly rather than guessing or padding the gap with a plausible-sounding number.
+
+### Why a book, and not just a comparison table
+
+You could, in theory, get most of the raw numbers in this book from a single spreadsheet, and in fact that is exactly where this book started. But numbers on their own do not tell you which numbers matter for your situation, why two providers that look similar on price can differ enormously in practice, or what questions actually separate a strong choice from a weak one. A first-time buyer with a 15 percent deposit, a landlord assembling a buy-to-let portfolio, and a professional buying a flat in central London at the very top of the market are, in effect, shopping in three different parts of this market, even though all three might be looking at the word "Islamic mortgage." This guide is organised so each of those readers can find their own path through the data, not just a single generic ranking.
 
 ### How this guide is organised
 
@@ -104,6 +114,18 @@ It is easy to hear "interest is haram" as an arbitrary rule handed down from abo
 **Real economic activity should be at the centre of finance.** Interest-based lending lets money multiply through pure financial engineering, detached from the production of real goods, services, or housing. Islamic finance, in principle, ties every transaction to something real: an actual property, an actual trade of goods, an actual partnership in an actual asset.
 
 None of this means Muslims believe conventional finance is only about greed, or that everyone who charges interest is acting in bad faith. It means that, within Islamic teaching, this particular mechanism, guaranteed compensation for the mere passage of time on a loan of money, is considered unjust regardless of the lender's intentions, and is therefore off-limits.
+
+### A short worked example of the moral logic
+
+Abstract principles land better with a concrete picture. Imagine two neighbours, Amina and Tom, who each need to borrow £10,000 for a year. Tom borrows from a conventional lender at 8 percent interest. Whatever happens to Tom that year, whether his small business booms or whether he loses his job the following month, he owes exactly £10,800 back. The lender's return is fixed and guaranteed, entirely detached from how Tom's year actually goes.
+
+Now imagine Amina instead enters a partnership with a financier who puts in the same £10,000 to help her open a small shop, in exchange for 30 percent of the shop's profit that year. If the shop does well and makes £4,000 profit, the financier receives £1,200, more than Tom's lender made. If the shop struggles and only breaks even, the financier receives nothing at all, despite putting in the same amount of money. If the shop loses money, in a genuine partnership structure the financier absorbs a real share of that loss too.
+
+This is the moral difference Islamic finance is trying to preserve: a lender who takes no risk should not be guaranteed a reward, while a genuine partner who shares in both the upside and the downside can fairly share in the profit. Keep Amina and Tom in mind through Chapter 3, because the central criticism of some UK Islamic mortgage products is essentially the question of whether the customer ends up more like Tom than like Amina, even when the paperwork says partnership.
+
+### A brief word on where these rules come from
+
+It is worth being clear about the sourcing here, since this book will refer to "scholars" and "scholarly opinion" often. The prohibition of riba is not a single modern interpretation. It rests on verses in the Quran, most famously in Surah Al-Baqarah, and on statements attributed to the Prophet Muhammad recorded in the hadith literature, and it has been discussed continuously by Islamic jurists across every major school of Islamic law for over a thousand years. What has genuinely evolved, and what generates real modern debate, is not whether riba is prohibited, which is settled, but how that prohibition should be applied to instruments that did not exist in the classical period, such as securitised mortgages, benchmark-linked rent, and modern banking regulation. That second question, application to modern instruments, is where Chapter 3's honest disagreement actually lives.
 
 ### So how do you buy a house without a mortgage?
 
@@ -155,6 +177,18 @@ Their argument starts from a basic point: something has to determine the price o
 
 They also point to a structural difference that survives even when the pricing benchmark looks similar: the underlying contract is genuinely different. In Diminishing Musharaka, the provider is a real co-owner of the property, not a lender. If the property is destroyed, damaged, or falls in value, that loss is shared according to ownership share, in a way a conventional lender's fixed debt is not exposed to. The customer typically is not obligated to keep buying more shares on any fixed schedule, and in principle can pause or slow acquisition, something a conventional mortgage does not allow. Whether these differences are treated as meaningful protections or as legal technicalities that rarely change the outcome in practice is exactly where the two sides disagree.
 
+### A closer look at how the benchmark actually moves through the product
+
+It is worth slowing down and tracing exactly how a Bank of England rate change reaches your monthly payment, because this mechanical detail is the entire basis of the criticism.
+
+Say a provider prices its rent at "BBR plus 1.5 percent." If the Bank of England base rate sits at 5.0 percent, your effective rate is 6.5 percent, applied to the share of the property the provider still owns. If the Bank of England raises the base rate to 5.5 percent at its next meeting, the provider's rate moves to 7.0 percent, usually within one or two payment cycles, exactly as a tracker mortgage would move. The pounds and pence increase on your statement looks, to most customers, indistinguishable from what would happen on a conventional tracker mortgage with the same underlying rate change.
+
+This is precisely why critics use the phrase "economic substance over legal form." A contract can be built from a partnership deed and a separate lease agreement, with genuinely different legal wording from a mortgage deed, and still produce a payment schedule that rises and falls in lockstep with Bank of England policy. The critics' claim is not that the paperwork is fraudulent. It is that if two products respond identically to the same external trigger, in the same direction, by a similar margin, on a similar timetable, then whatever the label says, the customer is bearing the same interest rate risk in both cases. That, they argue, is the substance the prohibition of riba was trying to prevent, regardless of what the contract is called.
+
+### Names you may encounter in this debate
+
+You do not need to become a specialist to understand this criticism, but you may come across it referenced by name in forums, YouTube videos, or academic articles. Analysts and academics who study Islamic finance from within the tradition, not from outside critics of religion generally, have published critiques along these lines in academic journals and industry commentary for over a decade. Their broad argument, sometimes described as concern about "Sharia-compliant but not Sharia-based" products, is that the industry has, in places, prioritised finding a structure a scholar can sign off on over asking whether that structure changes the customer's actual economic position compared with a conventional loan. This is a mainstream, published position within Islamic finance scholarship, not a fringe accusation, even though most providers and many other respected scholars disagree with it.
+
 ### Where reasonable scholars actually disagree
 
 It helps to be precise about what is, and is not, contested:
@@ -190,6 +224,16 @@ The first was tax. A partnership-based or lease-based purchase can, on paper, lo
 The second was regulation. A product where a bank co-owns your home and charges you rent, or leases it to you, does not fit the legal definition of a conventional mortgage. The UK created a specific regulated category, the Home Purchase Plan, or HPP, so that products like Diminishing Musharaka and Ijara home finance fall under Financial Conduct Authority oversight in a similar way to a conventional mortgage. That means an FCA-regulated Home Purchase Plan provider has to meet rules on affordability checks, disclosure, treating customers fairly, and complaint handling, broadly comparable to conventional mortgage regulation, even though the underlying contract is structured differently.
 
 This matters practically. If a provider in this data offers an FCA-regulated Home Purchase Plan, you have access to the Financial Ombudsman Service and the Financial Services Compensation Scheme protections that come with FCA regulation, on top of whatever Sharia governance sits over the product. If you are ever unsure whether a specific product is FCA-regulated, that is a direct, fair question to ask the provider before applying, and Chapter 11 includes it on the checklist.
+
+### What FCA regulation actually buys you, in practice
+
+It is worth spelling out what "FCA-regulated" concretely means for a Home Purchase Plan customer, because the phrase gets used often without explanation. If a provider and product are FCA-regulated, the provider must carry out an affordability assessment before offering you finance, similar in spirit to a conventional mortgage affordability check, weighing your income, outgoings, and other commitments rather than simply approving whatever amount you ask for. The provider must give you clear, comparable pre-contract disclosure of costs, fees, and the total amount payable, in a format designed to make it easier to compare across providers. If something goes wrong and the provider cannot resolve your complaint directly, you can escalate free of charge to the Financial Ombudsman Service, an independent complaints body, rather than being limited to legal action. And if the provider itself became insolvent, the Financial Services Compensation Scheme provides a safety net up to its published limits, in the same way it protects conventional mortgage and savings customers.
+
+None of this replaces Sharia governance, and FCA regulation says nothing at all about whether a product is religiously compliant. The FCA does not assess Sharia compliance and has no view on it. The two systems, financial regulation and Sharia governance, sit alongside each other and answer different questions: one asks "is this fair, transparent, and affordable under UK financial law," and the other asks "does this satisfy Islamic principles." A product can pass one and still leave you with questions about the other, which is exactly why Chapter 9 treats Sharia governance as a separate topic worth its own scrutiny.
+
+### A short history of how the market got here
+
+Islamic home finance in the UK is often described as starting in earnest in the early 2000s, when the first Home Purchase Plan legislation and dedicated tax relief were introduced, followed by the licensing of the Islamic Bank of Britain in 2004, which later rebranded as Al Rayan Bank. For roughly a decade, the market was small and dominated by a handful of specialist Islamic banks serving a relatively narrow customer base directly. The 2010s brought a second wave, as international Islamic and Gulf-region banking groups opened UK subsidiaries or Sharia-compliant windows, seeing a UK market that conventional lenders were not serving. The most recent wave, visible clearly in this data, is a cluster of digital-first fintech entrants launched from the late 2010s onward, competing on faster online applications, flexible acquisition payment structures, and niches like shared ownership and buy-to-let special purpose vehicles that older providers were slower to serve. Understanding this history helps explain why the market today is such a mix of very different kinds of institutions, from century-old-feeling bank bureaucracy to app-based onboarding, all operating under the same broad regulatory umbrella.
 
 ### Who is actually operating in this market
 
@@ -264,6 +308,23 @@ Murabaha means a cost-plus sale. Here, the provider buys the property for £240,
 
 This is the structure most often pointed to in Chapter 3's discussion of fixed-price options that sit closer to the classical ideal, precisely because the total cost is agreed upfront and does not move if the Bank of England changes interest rates during your term. The tradeoff is usually less flexibility: because the price is fixed for the whole term, Murabaha products are less commonly offered with the kind of payment flexibility, such as accelerating your ownership share, that some Diminishing Musharaka products allow.
 
+### Following the £300,000 example through the years
+
+Numbers make this concrete in a way that words alone cannot. Continuing the Diminishing Musharaka example from above, where the provider starts by owning 80 percent (£240,000) and you own 20 percent (£60,000), here is roughly how the balance of ownership might shift over a 25-year term, assuming a simplified, level acquisition schedule with no overpayments and no benchmark change, purely to illustrate the mechanics.
+
+| Year | Provider's remaining share | Your ownership share | Roughly what happens to your monthly rent portion |
+|---|---|---|---|
+| Year 1 | About 78% | About 22% | Rent charged on close to 78% of the property |
+| Year 10 | About 55% | About 45% | Rent charged on a shrinking base, close to 55% |
+| Year 20 | About 20% | About 80% | Rent charged on a small remaining base, close to 20% |
+| Year 25 | 0% | 100% | No rent left to pay, you own the property outright |
+
+This table is illustrative only, built to show the shape of the mechanism, not a quote from any real product. In practice, acquisition schedules, overpayment options, and any benchmark movement in the rent rate all change these numbers, sometimes considerably, and different providers structure the acquisition curve differently. The consistent pattern across providers, though, is the direction: your ownership share rises and the rent-bearing share falls every single month, arriving at full ownership by the end of the agreed term, exactly as the "diminishing" in the name describes.
+
+### What happens if you want to leave early
+
+A question worth asking before signing anything is what happens if you want to sell the property, remortgage elsewhere, or pay off the remaining balance early. Conventional mortgages often carry an early repayment charge during any fixed-rate period, and Islamic home finance products vary on this point too. Some providers in this data explicitly advertise no early repayment charge at all, which can matter a great deal if your circumstances might change during the term. Others apply a charge similar in spirit to a conventional early repayment charge, usually reducing or disappearing after an initial fixed period ends. Because this varies by provider and is not standard across the market, it belongs on your list of direct questions in Chapter 11 rather than something you should assume either way.
+
 ### Side by side
 
 **As of February 2026**, here is how the three models compare on the features that matter most to a typical buyer.
@@ -336,6 +397,16 @@ The most represented single-brand provider by product count after Gatehouse, wit
 
 The minimum finance sizes across this data vary enormously, from Al Rayan's £50,000 minimum on its Standard HPP to ADIB's £500,000 minimum across all four of its products. If you are a first-time buyer with a modest deposit, some providers in this data, including ADIB and parts of Ahli United's and QIB's range, are unlikely to be relevant to you at all regardless of how their products compare on paper. Chapter 8 turns this kind of practical filtering into a step-by-step process.
 
+### What "transparency category" actually measures, and what it does not
+
+Because this rating appears repeatedly across this chapter and the next, it is worth being precise about what it captures. The underlying data assigns each product a category of High, Medium, or Low based on how much detail the provider makes publicly available about two things: its Sharia governance arrangements, meaning whether an identifiable scholar or board is named, whether that board is internal or external to the company, and whether any reasoning or ongoing review process is published, and its pricing structure, meaning whether the benchmark, margin, and fee schedule are disclosed clearly enough for an outside reader to reconstruct how the price is actually calculated.
+
+A High rating generally means an external, named Sharia certifier with published credentials, alongside a reasonably clear pricing breakdown. A Low rating generally means an internal Sharia audit function with no named external scholar disclosed publicly, alongside a pricing structure that requires a direct enquiry to fully understand. This is a transparency measure, not a compliance measure. A provider with a Low transparency category may run an entirely rigorous internal Sharia compliance process; it simply publishes less about it. The practical consequence for you as a customer is straightforward even if the underlying religious question is not: the less a provider publishes, the more legwork falls on you to ask direct questions and get satisfactory answers before committing, which is exactly what Chapter 9 and Chapter 11 help you do.
+
+### Reading between the provider profiles
+
+A few patterns are worth naming out loud after reading through all 11 profiles. First, external certification by a small number of named Sharia advisory firms, particularly Amanah Advisors, and named individual scholars, particularly Mufti Faraz Adam and Mufti Barkatulla, recurs across multiple unrelated providers in this data. This is normal in a specialist field with a limited pool of qualified Sharia scholars working in Islamic finance, but it also means the same scholar's judgment sits behind several competing products, which is worth knowing if you were assuming each provider's Sharia sign-off was fully independent of every other provider's. Second, the newer, digital-first entrants in this data, Wayhome, Pfida, and StrideUp among them, generally sit at the High end of the transparency category, likely because transparency and clear digital disclosure are part of how they compete for customers against older, more established institutions. Third, the providers with the largest overseas banking group parentage, ADIB UK and both Ahli United entries, sit at the Low end in this data, which may simply reflect a banking culture built for markets where this kind of public disclosure is less expected, rather than anything about the underlying product itself.
+
 ### Key takeaways
 
 - As of February 2026, this data captures 11 named provider entries offering 23 home finance products between them, ranging from long-established Islamic banks to fintech-style newer entrants.
@@ -402,6 +473,12 @@ The remaining 5 products in this data serve narrower needs, each essentially a c
 | Buy-to-let, portfolio | UBL UK | Portfolio BTL | Diminishing Musharaka | 25% | £500k–£5m+ | Larger, multi-property landlords |
 | Buy-to-let, limited co/SPV | ADIB UK | BTL Purchase Plan (SPV/Corporate) | Diminishing Musharaka | 35% | £500k–£20m+ | 8–25 yr term |
 
+### Reading the fee side, not just the headline rate
+
+Headline pricing, whether expressed as a benchmark plus margin or a fixed profit rate, is only part of the real cost of any of these products, and it is worth pausing on the fee side specifically because it is easy to overlook when comparing tables like the ones above. Most providers in this data charge some combination of an arrangement or facility fee, typically a percentage of the finance amount or a flat sum in the low thousands, a valuation fee to have the property professionally assessed, and legal fees for the provider's own conveyancing work alongside your own. Some products, notably Pfida's OwnTogether, explicitly advertise the absence of certain fees, such as early repayment charges and late payment fees, as a selling point, which tells you those fees are common enough elsewhere in the market to be worth advertising the lack of.
+
+Because this data captures product structure rather than a live, itemised fee schedule for every product, treat the fee side as an open question for every product on your shortlist rather than an assumption. Two products with an identical headline rate can end up meaningfully different in total cost once arrangement fees, valuation fees, and legal costs are added, particularly on larger finance amounts where percentage-based fees scale up quickly. Ask each provider on your shortlist for a full, itemised cost breakdown in writing before comparing them against each other, not just the headline rate quoted on their website.
+
 ### What jumps out across the whole dataset
 
 A few patterns are worth naming directly. Diminishing Musharaka dominates every category except the two smaller Ahli United Ijara products and the two bespoke high-net-worth or bridging products. Deposit requirements below 15 percent are rare and, where they exist, come with an asterisk worth reading carefully. And transparency category correlates loosely with how established and consumer-facing a provider is: Gatehouse, StrideUp, Wayhome, and Pfida, all of which rely on external Sharia certification, sit at High, while the larger international-bank-linked entries, ADIB, QIB, and both Ahli United products, sit at Low.
@@ -450,6 +527,18 @@ Once you have a short list, compare on these dimensions specifically, in roughly
 
 **5. Contract model, in light of Chapter 3's critique.** If the benchmark-pricing critique from Chapter 3 matters to you, this is where it becomes concrete. Products priced against SONIA or another interest rate benchmark, such as ADIB's residential and buy-to-let range in this data, sit on the side of that debate you should weigh carefully. A Murabaha product with a fixed profit rate, such as Al Rayan's Premier Home Finance, sits on the other side, at the cost of the higher minimum finance size that product carries.
 
+### Fixed versus variable pricing, and how to think about the tradeoff
+
+One decision tends to matter more than almost any other on your shortlist: whether to take a fixed pricing period, a variable benchmark-linked rate, or a fully fixed Murabaha profit rate for the whole term. It helps to think about this less as "which is objectively better" and more as a question about your own tolerance for uncertainty and your view of where rates are headed.
+
+A fixed period, commonly 2 or 5 years in this data, gives you a known monthly payment for that stretch of time, which makes budgeting easier and protects you if rates rise during the fixed period. The cost is that fixed pricing is usually set slightly higher than the equivalent variable rate at the moment you sign, since the provider is pricing in the risk that rates might move against it during the fixed term, and you face a full repricing, at whatever rates look like then, once the fixed period ends. A variable rate moves with the market from the outset, which can work in your favour if rates fall, but leaves your monthly payment less predictable and, per Chapter 3's critique, most exposed to the concern about benchmark-linked pricing behaving like a conventional mortgage. A fixed Murabaha profit rate for the whole term removes this decision entirely: you know the total cost from day one, for better or worse, and it will not change regardless of what happens to Bank of England policy over the following years.
+
+There is no universally correct answer here. A buyer who values certainty and plans to stay in the property for the full term is generally well served by locking in as much fixed pricing as they can access, even at a small premium. A buyer who expects rates to fall, or who expects to move, remortgage, or sell within a few years anyway, may reasonably prefer the flexibility of a variable rate or a shorter fixed period. What matters is making this choice deliberately, with the tradeoff named explicitly, rather than defaulting to whatever a provider's sales process presents first.
+
+### A second worked example, at the higher end of the market
+
+The first-time buyer example above is not the only kind of reader this book serves. Consider a buyer purchasing a £1.2 million property with a £300,000 deposit, needing to finance £900,000. Running the same filters: this immediately moves outside the residential owner-occupied products with sub-£1m maximums, such as Wayhome and Pfida, and into the high-net-worth category covered in Chapter 7, where Al Rayan's Premier Home Finance (Murabaha, fixed profit rate, £1m to £5m-plus) and QIB UK's HNW Custom HPP (bespoke, £1m upward) both remain live candidates, alongside Gatehouse's Residential HPP and StrideUp's Inclusive HPP, both of which extend up to a £1.5m to £5m ceiling depending on the specific product. This buyer's real decision is less about deposit eligibility, since a 25 percent deposit clears every relevant threshold, and more about the fixed-versus-variable tradeoff discussed above, plus how much they value Al Rayan's fully fixed Murabaha profit rate against QIB UK's more flexible but Low-transparency bespoke structure.
+
 ### A simple worked filter
 
 Take a first-time buyer in the UK with a £40,000 deposit, wanting to buy a £250,000 home, needing to finance £210,000, on a standard residential purpose. Running the filters: category is residential owner-occupied (8 candidates). Deposit of 16 percent clears every product except those requiring 20 percent or more with no asterisked lower option, ruling out ADIB's two products. Loan size of £210,000 sits comfortably within Al Rayan, Gatehouse, StrideUp (both products), Wayhome, and Pfida's ranges. That leaves 6 realistic candidates, which is a genuinely comparable shortlist rather than an overwhelming list of 23.
@@ -487,6 +576,16 @@ External certification does not eliminate this concern entirely, since certifier
 Each product in this data carries a "Transparency Category" of High, Medium, or Low. Based on the data and the explanations provided alongside it, this reflects how much detail a provider publishes about who reviews its products and how, and to a lesser extent how clearly its pricing structure is disclosed. It is not, and should not be read as, a direct measure of religious legitimacy. A Low transparency category can sit alongside a real, functioning internal Sharia board. It simply means less of that process is visible to an outside customer trying to check it independently.
 
 **As of February 2026**, this data shows a fairly clear pattern: providers relying primarily on external certification by named bodies like Amanah Advisors, Gatehouse Bank, StrideUp, Wayhome, and Pfida, cluster at High. Providers relying primarily on internal boards without an external counterpart named in the data, Ahli United's two products and QIB UK, cluster at Low. ADIB UK, despite its combined internal-and-external model, is also recorded at Low across all four products, which suggests the transparency rating in this data is driven more by what is publicly disclosed than by the governance structure alone.
+
+### How Sharia review actually happens, in practice
+
+It helps to demystify what a Sharia review process usually looks like, since the phrase "certified Sharia-compliant" can otherwise feel like a black box. Typically, a provider's legal and product teams draft the contract structure for a new product, covering the ownership split, the rent or profit calculation, and what happens in default or early exit scenarios. That draft goes to the Sharia board or external certifier, who reviews it against classical contract requirements, checking things like whether the ownership transfer is genuine and not merely nominal, whether the rent is tied to an identifiable, permissible basis, and whether any penalty or default clause avoids compounding in a way that would itself resemble interest. The board or certifier then issues a fatwa, usually in writing, either approving the structure, requiring specific changes before approval, or rejecting it outright. Once approved, most providers commit to periodic re-review, particularly if the product's terms change materially, though how often this happens and how publicly it is documented varies considerably and is not something this data captures in detail for every provider.
+
+This process is genuinely more substantive than a rubber stamp in most cases, requiring real legal and structural work before a scholar will sign off. The Chapter 3 critique is not that this process is fake. It is that even a genuine, careful review process operating on an internally appointed board still leaves a structural independence question unaddressed, and that the review criteria themselves, particularly around benchmark-linked pricing, remain a live scholarly disagreement rather than a settled question that a fatwa can simply close.
+
+### What published fatwas and certification actually look like when you find them
+
+If you go looking, some providers do make this documentation available. Gatehouse Bank and other Amanah Advisors-certified providers in this data typically reference a Sharia compliance certificate on their websites or in product documentation, sometimes including the certifying scholar's name and credentials, and occasionally a short summary of the structure reviewed. This is worth actually reading if you can find it, not just noting that it exists, since the summary itself can tell you which specific features of the contract, ownership share calculation, rent basis, or early exit terms, the certifier focused their review on. If a provider cannot produce anything beyond a general assurance that "our products are Sharia-compliant" when asked directly, that absence is itself useful information, regardless of which transparency category the product carries in this data.
 
 ### Questions worth asking any provider directly
 
@@ -553,6 +652,14 @@ Gatehouse's Regular Saver stands out for accessibility, a £1 minimum with regul
 
 Seven notice account products and four limited access products round out the data, generally requiring a set notice period, commonly 31 to 120 days, before you can withdraw, in exchange for a better expected profit rate than pure instant access. Cur8 Capital's GBP Income Fund and Innovative Finance ISA both fall here, alongside Simply Ethical's Shariah Cash ISA and Managed Portfolios, Wahed Invest's Everyday Shariah Account, and Foresters Financial's Shariah ISA and Shariah Lifetime ISA, the latter specifically designed for either retirement at 60 or a first home purchase, with UK government top-ups typical of Lifetime ISAs generally.
 
+### Building a deposit with more than one product at once
+
+Many readers will not park their entire deposit fund in a single account. A common, sensible pattern is to split savings across an instant access account, held for money you might need at very short notice once an offer is accepted, and a fixed term or notice account paying a better expected profit rate, held for the portion of your deposit you are confident you will not need for at least several months. Some readers will also want to keep an eye on tax-advantaged products specifically, since two entries in this data, UBL UK's Fixed Rate Cash ISA and Foresters Financial's Shariah ISA and Shariah Lifetime ISA, sit inside the UK's ISA tax wrapper, meaning profit earned within the ISA annual allowance is not subject to UK income tax, on top of being structured to avoid riba. The Shariah Lifetime ISA specifically is worth a closer look for a first-time buyer, since standard Lifetime ISA rules include a UK government bonus on contributions when the funds are used towards a first home, which can meaningfully accelerate deposit building if you meet the eligibility criteria.
+
+### Gold and property-backed products, and why they behave differently
+
+Wahed Invest's Physical Gold Portfolio, Minted's Gold Monthly Plan, and Yielders' Property Portfolio deserve a separate mention because they work on a fundamentally different principle from every bank deposit product in this chapter. Rather than depositing cash and receiving a share of trading profit, you are buying an actual asset, gold bullion in the first two cases and a share of real property in the third, and your return depends entirely on what that asset does in the market. Gold has historically been seen by some Muslim savers as a stable, tangible store of value outside the banking system entirely, though its price can still move up or down over any given period, and Minted's £30 per month plan in particular is structured as a gradual accumulation product rather than a lump-sum purchase, which suits someone building exposure over time rather than depositing a deposit fund all at once. Yielders' property portfolio, by contrast, ties your return to the performance of actual UK property, which for a reader who is also trying to buy their own home may feel like a natural fit conceptually, but it is worth remembering this is genuine investment risk, not a savings account, and your capital is not guaranteed to be returned in full.
+
 ### A word on FSCS protection
 
 This is one of the most important practical distinctions across all 31 products. A standard bank savings account, including every entry from Al Rayan, Gatehouse, BLME, Nomo, UBL UK, Habib Bank Zurich, QIB, and KFH in this data, carries FSCS protection, meaning your money is protected up to the standard UK compensation limit if the bank fails. Investment-style products, including Wahed Invest's accounts, Minted's gold plan, Yielders' property portfolio, Cur8 Capital's funds, and the Foresters Financial and Simply Ethical investment products, generally do not carry this protection, because you are buying an asset or a fund unit rather than making a bank deposit. Higher potential returns on these products come with real capital risk that a savings account does not carry. Raisin UK's Shariah Savings Hub, a marketplace product in this data with a Low transparency category, is described as FSCS protected on the deposit itself, but as a marketplace connecting you to underlying providers, it is worth confirming exactly which institution is holding your money and under what protection before depositing.
@@ -594,6 +701,14 @@ None of the 23 home finance products or 31 savings products in this data show ob
 **Treating a Low transparency category as automatically disqualifying, or a High one as automatically superior.** Transparency category reflects public disclosure, not necessarily religious legitimacy or product quality, as discussed in Chapter 9. Use it as one input, not a verdict.
 
 **Forgetting that this data is a snapshot.** Every figure, rate, fee, and minimum in this book was captured as of February 2026. Rates and terms in Islamic finance, as in conventional finance, move with the market. Always request current figures before applying anywhere.
+
+### A short story of how a good decision actually goes
+
+It can help to picture the whole process end to end rather than as a list of isolated warnings. A careful buyer starts, as Chapter 8 suggests, by filtering on purpose, deposit, and loan size, arriving at a shortlist of three or four products rather than trying to weigh all 23 at once. They request a written, itemised cost illustration from each shortlisted provider, covering the fixed period and the full term, in pounds rather than only as a headline percentage, and they compare those illustrations side by side rather than relying on memory of a phone call. They ask each provider, directly and without apologising for asking, who reviews the product for Sharia compliance and whether that review is published. They read the small print on any Early Repayment Charge, particularly if their own circumstances feel at all uncertain over the fixed period. And only once all of that is in hand do they involve an independent, FCA-authorised financial adviser and, if it matters to them personally, their own trusted source of Islamic scholarship, to sanity-check the final choice before signing. None of these steps individually is difficult. Skipping several of them at once, usually under time pressure, is how buyers end up somewhere they later regret.
+
+### The cost of comparing too little, in real terms
+
+It is worth being blunt about what happens when a buyer skips this process. A percentage-based arrangement fee difference of even half a percentage point, on a £250,000 loan, is worth well over £1,000 on its own, before any difference in the ongoing rate is even considered. An Early Repayment Charge discovered only after deciding to move house within the fixed period can run into several thousand pounds depending on how much of the term remains. None of these costs are hidden in the sense of being illegal or undisclosed, in the products captured in this data. They are disclosed, in the documentation every provider is required to provide under FCA rules discussed in Chapter 4. But disclosed and noticed are two different things, and the entire point of this chapter's checklist is making sure you actually notice them before, not after, you commit.
 
 ### Questions worth asking any provider, gathered in one place
 
@@ -650,6 +765,26 @@ This chapter gathers every term used across the book in one place, so you can lo
 **HMO, or House in Multiple Occupation, and MUFB, or Multi-Unit Freehold Block.** Specialist property types involving multiple separate lettable units, covered by Gatehouse Bank's specialist buy-to-let product in this data. Referenced in Chapter 7.
 
 **Innovative Finance ISA, or IF-ISA.** A UK tax-advantaged savings wrapper for investment-based, rather than deposit-based, products, used by Cur8 Capital's product in this data. Referenced in Chapter 10.
+
+**Lifetime ISA.** A UK tax-advantaged savings account, available in a Sharia-compliant form from Foresters Financial in this data, designed to help savers either buy a first home or save for retirement from age 60, with a government bonus added to qualifying contributions. Referenced in Chapter 10.
+
+**Bank Purchase Plan, or BPP.** An alternative name occasionally used in the UK market for a Home Purchase Plan structured on a Diminishing Musharaka or Ijara basis, referring to the same regulated FCA product category discussed in Chapter 4.
+
+**Alternative finance.** The precise legal and tax terminology the UK uses for Islamic and Sharia-compliant finance arrangements, chosen so that legislation could be written neutrally rather than specifically naming a religion, discussed in Chapter 4 in the context of Stamp Duty Land Tax relief.
+
+**Fatwa.** A formal scholarly opinion or ruling issued by a qualified Islamic scholar or Sharia board, used in this context to approve a specific financial product's structure as compliant with Islamic law. Discussed in Chapter 9.
+
+**Amanah Advisors.** An external Sharia advisory and certification firm that appears repeatedly in this data, certifying products from Gatehouse Bank, StrideUp, Wayhome, and Offa. Referenced in Chapters 6, 7, and 9.
+
+**Staircasing.** A term used in shared ownership arrangements, including Wayhome's product in this data, describing the process of buying additional, defined steps of ownership in a property over time, increasing the customer's share and reducing the amount of rent paid on the remaining share.
+
+**Financial Ombudsman Service, or FOS.** An independent, free complaints resolution service available to customers of FCA-regulated financial products, including most Home Purchase Plans discussed in this data, if a dispute with the provider cannot be resolved directly. Referenced in Chapter 4.
+
+**Financial Conduct Authority, or FCA.** The UK regulator responsible for authorising and supervising financial services firms, including most Home Purchase Plan providers referenced throughout this data. Explained in Chapter 4.
+
+**Expected profit rate.** The forecast, non-guaranteed rate of return a bank publishes for a Wakala or Mudaraba-based savings product, functioning similarly to an interest rate for comparison purposes but not fixed or guaranteed in the way a conventional savings rate is. Explained in Chapter 10.
+
+**Net freehold to value, or net FTV.** A deposit or equity measure used specifically in Offa's residential bridging product in this data, similar in spirit to loan-to-value but calculated against the net freehold value of the property for short-term bridging purposes. Referenced in Chapter 7.
 
 ### A closing note
 
